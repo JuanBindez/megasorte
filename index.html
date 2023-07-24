@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Números</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="gerar" onclick="gerarNumeros()">Gerar</button>
+        <div id="numeros"></div>
+    </div>
+
+    <script>
+        function gerarNumeros() {
+            var numeros = [];
+            while (numeros.length < 6) {
+                var numero = Math.floor(Math.random() * 60) + 1;
+                if (numeros.indexOf(numero) === -1) {
+                    numeros.push(numero);
+                }
+            }
+
+            var numerosDiv = document.getElementById("numeros");
+            numerosDiv.innerHTML = numeros.join(" ");
+        }
+    </script>
+</body>
+</html>
+
