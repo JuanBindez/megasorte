@@ -8,38 +8,27 @@
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #32b86e;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #numeros {
     margin-top: 20px;
 }
 
-#numeros::before {
-    content: "Números gerados: ";
-    font-weight: bold;
-}
-
-#numeros::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-#numeros span {
+.circulo-verde {
     display: inline-block;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    background-color: #4CAF50;
+    background-color: #32b86e;
     color: white;
-    margin: 5px;
     font-size: 16px;
+    margin: 5px;
 }
 

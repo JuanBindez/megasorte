@@ -21,7 +21,7 @@
             }
 
             var numerosDiv = document.getElementById("numeros");
-            numerosDiv.innerHTML = numeros.join(" ");
+            numerosDiv.innerHTML = numeros.map(numero => `<span class="circulo-verde">${numero}</span>`).join("");
         }
     </script>
 </body>
